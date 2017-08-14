@@ -4,18 +4,60 @@
 		<title>Skylar Gordon: Resident Weirdo</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body>
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="aboutme.html">About Me</a>
-			<a href="blog.html">Blog</a>
-			<a href="portfolio.html">Portfolio</a>
-		</nav>
-		<header>
-			<h1>Skylar Gordon: Resident Weirdo</h1>
-			<div class="description">This is the internet home of Skylar Gordon, Resident Weirdo. Feel free to poke around and see what I'm up to! :)</div>
-		</header>
-		<script type="text/javascript" src="index.js"></script>
+		<div class="container-fluid">
+			<nav class="navbar row">
+				<ul>
+					<li class="header"><a href="#contact">Contact</a></li>
+					<li class="header"><a href="portfolio.html">Portfolio</a></li>
+					<li class="header"><a href="blog.html">Blog</a></li>
+					<li class="header"><a href="#about">About</a></li>
+				</ul>
+			</nav>
+			<div class="main">
+				<div id="about" class="container-fluid">
+					<div class="row">
+						<h3 class="col-xs-8">Silicon Valley native looking for love (dev work) in all the wrong places - notably, not Silicon Valley. Front-end developer since age 7, massive nerd since birth.</h3>
+						<img src="https://scontent.flas1-1.fna.fbcdn.net/v/t1.0-9/17553519_749213155245472_8319374538734874930_n.jpg?oh=c1b0b278fe2011cf81eba5d9ace17e0b&oe=59AC8D55" class="col-xs-4 img-circle img-responsive" id="mypic" alt="My face" />
+					</div>
+				</div>
+				<div id="contact" class="container-fluid">
+					<h1 class="text-center">Contact Me</h2>
+						<div class="row">
+							<form action="/submit-query" class="col-xs-6">
+								<input type="text" placeholder="Name" required>
+								<br />
+								<input type="email" placeholder="Email" required>
+								<br />
+								<input type="text" placeholder="Phone # (optional)">
+								<br />
+								<textarea rows="10" cols="30">Say something...</textarea>
+								<br />
+								<label><input type="checkbox" name="notspam" required> I agree not to use this form for spam or solicitation.</label>
+								<br />
+								<input type="submit" class="btn btn-default">
+								<input type="reset" class="btn btn-default">
+							</form>
+							<h3 class="col-xs-6">Want to learn more about me? Curious about my resume or my experience? Need help with your sudoku? Ask away!<br /><br />
+								Just want to spam or advertise your services to me? Have nothing nice to say? Go elsewhere please.</h3>
+							</div>
+						</div>
+					</div>
+				<footer class="navbar row text-center">
+					<div class="col-xs-6">
+						<h4>About this Page</h4>
+						<h5>Made with <i class="fa fa-heartbeat"></i> and <i class="fa fa-magic"></i> by <a href="#top">Skylar Gordon</a></h5>
+					</div>
+					<div class="col-xs-6">
+						<h4>Around the Web</h4>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-free-code-camp"></i></a>
+					</div>
+				</footer>
+			</div>
   </body>
 </html>
